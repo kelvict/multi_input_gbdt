@@ -61,7 +61,7 @@ Option parse_option(std::vector<std::string> const &args)
         }
     }
 
-    if(i != argc-6)
+    if(i != argc-8)
         throw std::invalid_argument("invalid command");
 
     opt.Va_path = args[i++];
