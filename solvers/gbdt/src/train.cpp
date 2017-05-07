@@ -138,5 +138,8 @@ int main(int const argc, char const * const * const argv)
     write(Tr, gbdt, opt.Tr_out_path);
     write(Va, gbdt, opt.Va_out_path);
 
+    predict(Tr, gbdt, opt.Tr_pred_path);
+    predict(Va, gbdt, opt.Va_pred_path);
+
     return EXIT_SUCCESS;
 }
