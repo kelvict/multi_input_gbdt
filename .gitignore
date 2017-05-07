@@ -306,3 +306,5 @@ ENV/
 /site
 
 # End of https://www.gitignore.io/api/c,c++,macos,clion,linux,python,pycharm
+# my ignore
+dataset/*
