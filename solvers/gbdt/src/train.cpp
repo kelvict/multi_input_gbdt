@@ -129,8 +129,8 @@ int main(int const argc, char const * const * const argv)
     Problem const Tr = read_data(opt.Tr_path, opt.TrS_path);
     Problem const Va = read_data(opt.Va_path, opt.VaS_path);
     std::cout << "done\n" << std::flush;
-
-	omp_set_num_threads(static_cast<int>(opt.nr_thread));
+  
+  omp_set_num_threads(static_cast<int>(opt.nr_thread));
 
     GBDT gbdt(opt.nr_tree);
     gbdt.fit(Tr, Va);

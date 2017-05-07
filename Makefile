@@ -13,6 +13,6 @@ ffm-predict:
 	ln -sf solvers/libffm-1.13/ffm-predict
 
 clean:
-	rm -f gbdt ffm fc.trva.t10.txt submission.csv *.sp* te.csv tr.csv
+	rm -f gbdt ffm fc.trva.t10.txt submission.csv *.sp*
 	make -C solvers/gbdt clean
 	make -C solvers/ffm clean
