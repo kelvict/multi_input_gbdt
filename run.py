@@ -25,7 +25,7 @@ subprocess.call(cmd, shell=True)
 
 print_with_time("Start to run gbdt")
 
-cmd = './gbdt -t 30 -s {nr_thread} te.gbdt.dense te.gbdt.sparse tr.gbdt.dense tr.gbdt.sparse te.gbdt.out tr.gbdt.out te.gbdt.pred tr.gbdt.pred'.format(nr_thread=NR_THREAD)
+cmd = './gbdt -t 40 -d 6 -s {nr_thread} te.gbdt.dense te.gbdt.sparse tr.gbdt.dense tr.gbdt.sparse te.gbdt.out tr.gbdt.out te.gbdt.pred tr.gbdt.pred'.format(nr_thread=NR_THREAD)
 subprocess.call(cmd, shell=True)
 
 print_with_time("Finish GBDT Task. Exit")
