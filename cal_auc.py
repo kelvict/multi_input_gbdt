@@ -13,7 +13,7 @@ def cal_auc(pred_path):
 
 	preds = df.iloc[:, 1].values
 	preds = [p>0 for p in preds]
-	roc_auc_score(labels, preds)
+	return roc_auc_score(labels, preds)
 
 if __name__ == "__main__":
-	cal_auc(sys.argv[1])
+	print cal_auc(sys.argv[1])
